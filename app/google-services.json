@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631659399213",
+    "project_id": "ecommerce-a8fad",
+    "storage_bucket": "ecommerce-a8fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631659399213:android:7d390315505227c1aa10a4",
+        "android_client_info": {
+          "package_name": "org.ganeshatech05102021.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631659399213-tc0ch9up78a5sr9uhjb1l0jk4qlvttfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkujKJPwF6NVdi8d1fyiYq1imnNdag3iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631659399213-tc0ch9up78a5sr9uhjb1l0jk4qlvttfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

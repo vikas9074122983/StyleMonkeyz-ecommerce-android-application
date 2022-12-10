@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productpage"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="550dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgv1"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgv2"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toRightOf="@id/imgv1"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgv3"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toRightOf="@id/imgv2"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgv4"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toRightOf="@id/imgv3"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/imgv5"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toRightOf="@id/imgv4"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/imgv6"
+                        android:layout_width="400dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="550dp"
+                        android:scaleType="centerCrop"
+                        android:layout_toRightOf="@id/imgv5"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/ppname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#222121"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ppname"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#222121"
+                    android:text="Product Price:"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ppprice"
+                    android:textColor="#222121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="1999"
+                    android:textSize="17dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/pdescri"
+                android:padding="3dp"
+                android:textColor="#2C2A2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="hello this is product decription hello this is product decription hello this is product decription hello this is product decription "
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl1" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pdescri">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addtocartbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/input_design"
+                    android:backgroundTint="#FFC107"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Add to cart"
+                    android:textColor="#000000" />
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/addtofavouritebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/input_design"
+                    android:backgroundTint="#FFC107"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Add to favourites"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/texhajv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="More Products you may like.."
+                android:textColor="#444345"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/ll1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/PPrecomenddRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/texhajv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
